@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "262997764828",
+    "project_id": "onlinemedicine-9b891",
+    "storage_bucket": "onlinemedicine-9b891.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262997764828:android:4de6bceb6b963f89e52219",
+        "android_client_info": {
+          "package_name": "com.example.onlinemedicine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262997764828-o7e9rpq66q58mvdn9p807hl4b1p51h3l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6GAZ8ciyBf_VNO_Wo7BqNJBG9oOj7uDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262997764828-o7e9rpq66q58mvdn9p807hl4b1p51h3l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="Activity.OrderActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar_nav"
+        android:layout_height="50sp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/go_to_cheakout"
+                android:orientation="horizontal"
+                android:layout_marginBottom="0sp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="end"
+                    android:layout_marginLeft="80dp"
+                    android:src="@drawable/addtocard"/>
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/order_layout"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="City"
+                        android:letterSpacing="0.3"
+                        android:fontFamily="@font/robotobold"
+                        android:textColor="@color/blue"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/city_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/editbg"
+                        android:drawableRight="@drawable/downarrow"
+                        android:paddingRight="5dp"
+                        android:hint="city name"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:fontFamily="@font/roboto_light"
+                        android:paddingBottom="10dp"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Hospital"
+                        android:letterSpacing="0.3"
+                        android:fontFamily="@font/robotobold"
+                        android:textColor="@color/blue"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/select_hospital"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:fontFamily="@font/roboto_light"
+                        android:background="@drawable/editbg"
+                        android:paddingRight="5dp"
+                        android:drawableRight="@drawable/downarrow"
+                        android:hint="Select Hospital"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Doctor"
+                        android:letterSpacing="0.3"
+                        android:fontFamily="@font/robotobold"
+                        android:textColor="@color/blue"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/select_doctor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingRight="5dp"
+                        android:fontFamily="@font/roboto_light"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/editbg"
+                        android:drawableRight="@drawable/downarrow"
+
+                        android:hint="Select Doctor"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Patients"
+                        android:letterSpacing="0.3"
+                        android:fontFamily="@font/robotobold"
+                        android:textColor="@color/blue"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/select_Patient"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/roboto_light"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/editbg"
+                        android:drawableRight="@drawable/downarrow"
+                        android:hint="Select pacent"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="10dp"
+                        android:textSize="20sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:visibility="gone"
+                    android:id="@+id/medicine_layout"
+                    android:orientation="vertical">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:id="@+id/medicine_list"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

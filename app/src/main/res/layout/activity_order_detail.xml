@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.OrderDetail">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:background="@color/colorPrimary1"
+            android:id="@+id/toolbar"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Cart Value"
+            android:layout_weight="5"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/roboto_light"
+            android:textSize="14dp"
+            android:textColor="@color/blue"
+            />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="\u20B91200.00"
+            android:layout_weight="5"
+            android:layout_marginLeft="15dp"
+            android:gravity="end"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/roboto_light"
+            android:textSize="14dp"
+            android:textColor="@color/blue"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Delivery Charge"
+            android:layout_weight="5"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/roboto_light"
+            android:textSize="14dp"
+            android:textColor="@color/blue"
+            />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="\u20B90.0"
+            android:layout_weight="5"
+            android:layout_marginLeft="15dp"
+            android:gravity="end"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/roboto_light"
+            android:textSize="14dp"
+            android:textColor="@color/blue"
+            />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:text="------------------------------------------------------------------------"
+        android:fontFamily="@font/roboto_light"
+        android:textSize="14dp"
+        android:textColor="@color/blue"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount to be Paid"
+            android:layout_weight="5"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/robotobold"
+            android:textSize="14dp"
+            android:textColor="@color/blue"
+            />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="\u20B91200.00"
+            android:layout_weight="5"
+            android:layout_marginLeft="15dp"
+            android:gravity="end"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/robotobold"
+            android:textSize="14dp"
+            android:textColor="@color/blue"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/borderfile"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotobold"
+            android:textColor="@color/blue"
+            android:textSize="14dp"
+            android:text="Total seving of \u20B90.0 on this order"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="@color/blue"
+                android:layout_weight="5"
+                android:textSize="14dp"
+                android:text="MRP Discount"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="@color/blue"
+                android:layout_weight="5"
+                android:gravity="end"
+                android:textSize="14dp"
+                android:text="\u20B90.0"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotobold"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/blue"
+        android:textSize="14dp"
+        android:text="Additional Notes"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:fontFamily="@font/roboto_light"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/borderfileoutline"
+        android:gravity="start"
+        android:textColor="@color/gray"
+        android:textSize="15dp"
+        android:hint="Enter any additional information regarding your order"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:weightSum="10"
+        android:layout_marginTop="10dp"
+        android:background="#E7E6E6"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#E7E6E6"
+            app:civ_border_width="0.5dp"
+            app:civ_border_color="@color/gray"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_baseline_home_24"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_light"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="3"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/blue"
+            android:textSize="14dp"
+            android:text="Deliver to:- Village-noora hata post lakari dargah,distric-siwan,bihar (841438)"
+            />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotobold"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="7"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/blue"
+            android:textSize="14dp"
+            android:text="CHANGE"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:weightSum="10"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/robotobold"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/blue"
+            android:textSize="16dp"
+            android:text="\u20B91200.00"
+            />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/robotobold"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="3"
+            android:background="@color/blue"
+            android:onClick="sendToPaymentOptions"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:text="Proceed to Payment"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".Activity.CheakOut">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:background="@color/colorPrimary1"
+            android:id="@+id/toolbar"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    
+    <androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight=".9"
+    android:id="@+id/selected_item_list"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight=".9"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/noItems"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="emptybox.json"
+        app:lottie_loop="true" />
+
+    <Button
+        android:id="@+id/gotopay"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/roundbutton10"
+        android:onClick="go_to_pay"
+        android:layout_marginBottom="20dp"
+        android:text="Continue"
+        android:textColor="@color/white" />
+
+</LinearLayout>
